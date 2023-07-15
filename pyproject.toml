@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "tennessee-4h-roundup"
+version = "0.1.0"
+description = "Jupyter Notebook for Creating Subtitles with AI and Machine learning as part of Tennessee's 4H Roundup"
+authors = ["Mark Baggett <mbagget1@utk.edu>"]
+readme = "README.md"
+packages = [{include = "tennessee_4h_roundup"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai-whisper = {git = "https://github.com/openai/whisper.git"}
+jupyter = "^1.0.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
